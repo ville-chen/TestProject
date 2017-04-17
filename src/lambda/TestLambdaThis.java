@@ -31,5 +31,4 @@ public class TestLambdaThis {
         new TestLambdaThis().r2.run();
         new TestLambdaThis().r3.run();
     }
-
 }
