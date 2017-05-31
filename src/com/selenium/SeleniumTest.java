@@ -13,6 +13,7 @@ public class SeleniumTest {
         WebDriver driver = new FirefoxDriver();
         //WebDriver driver = new ChromeDriver();
         driver.get("http://www.baidu.com");
-        //driver.quit();
+        /*driver.close();
+        driver.quit();*/
     }
 }

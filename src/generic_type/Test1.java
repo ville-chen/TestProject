@@ -31,13 +31,13 @@ public class Test1 {
         //list1.add(new Float(1.0));//编译错误
 
         //1.错误使用常规使用
-        List<Integer> integerList=new ArrayList<Integer>();
+        List<Integer> integerList=new ArrayList<>();
         integerList.add(2);
         integerList.add(2);
-        printIntValue(integerList);
-        List<Float> floatList=new ArrayList<Float>();
+        fillNumberList(integerList);
+        List<Float> floatList=new ArrayList<>();
         floatList.add((float) 3.3);
         floatList.add((float) 0.3);
-        printIntValue(floatList);
+        fillNumberList(floatList);
     }
 }
