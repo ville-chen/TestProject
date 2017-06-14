@@ -13,6 +13,9 @@ public class User {
 
     private Date date;
 
+    public User() {
+    }
+
     public User(Integer id, String name, Date date) {
         this.id = id;
         this.name = name;

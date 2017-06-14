@@ -107,7 +107,6 @@ public class FastjsonDemo {
         System.out.println(jsonstr);
 
         //json字符串  ——> 存放javabean的list
-        jsonstr = null;
         List<User> list2 = JSON.parseArray(jsonstr, User.class);
         for (User user : list2) {
             System.out.println(user.getName());
