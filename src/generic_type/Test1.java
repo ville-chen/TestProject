@@ -7,7 +7,7 @@ import java.util.List;
  * Created by admin on 2017/4/6.
  */
 public class Test1 {
-    //同理
+    //同理 ？类型未知，所以不能加入一种确定的类型
     public static void fillNumberList(List<? extends Number> list) {
         //list.add(new Integer(0));//编译错误
         //list.add(new Float(1.0));//编译错误

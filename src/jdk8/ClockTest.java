@@ -3,6 +3,7 @@ package jdk8;
 import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 /**
  * Created by admin on 2017/4/14.
@@ -18,5 +19,8 @@ public class ClockTest {
         String right = now1.substring(now1.indexOf("+"));
         String left = now1.substring(0,now1.indexOf("."));
         System.out.println(left + right);
+
+        System.out.println(System.currentTimeMillis());
+        System.out.println(new Date().getTime());
     }
 }
