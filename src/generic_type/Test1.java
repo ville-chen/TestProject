@@ -5,6 +5,7 @@ import java.util.List;
 
 /**
  * Created by admin on 2017/4/6.
+ * ? extends Number用法：向上限定，根据上限父类接口来操作
  */
 public class Test1 {
     //同理 ？类型未知，所以不能加入一种确定的类型
@@ -16,7 +17,7 @@ public class Test1 {
     public static void printIntValue(List<? extends Number> list) {
         //父类中的接口，子类中肯定存在，所以向上限定可以被迭代
         for (Number number : list) {
-            System.out.print(number.intValue()+" ");
+            System.out.print(number.intValue() + " ");
         }
         System.out.println();
     }
@@ -31,11 +32,11 @@ public class Test1 {
         //list1.add(new Float(1.0));//编译错误
 
         //1.错误使用常规使用
-        List<Integer> integerList=new ArrayList<>();
+        List<Integer> integerList = new ArrayList<>();
         integerList.add(2);
         integerList.add(2);
         fillNumberList(integerList);
-        List<Float> floatList=new ArrayList<>();
+        List<Float> floatList = new ArrayList<>();
         floatList.add((float) 3.3);
         floatList.add((float) 0.3);
         fillNumberList(floatList);

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by admin on 2017/4/6.
  */
-public class Test {
+public class Test0 {
 
     public static void main(String[] args) {
         //List<?> 是一个未知类型的List，而List<Object>其实是任意类型的List。你可以把List<String>, List<Integer>赋值给List<?>,
@@ -26,7 +26,7 @@ public class Test {
 
         //但是即使引用泛型范围大于等于实例范围，依旧不能通过引用对象，向其添加元素，因为它仍旧是未知的
         List<? extends Integer> list1 = new ArrayList<Integer>();
-        //？类型未知，所以不能加入一种确定的类型
+        //？类型未知，所以不能加入一种确定的类型，所以泛型限定应该用来限制参数。
         //list1.add(new Integer(1));//编译错误
 
         //4.类型参数T在类和方法声明的时候使用，代表元素类型,在上下文中可以使用
