@@ -5,11 +5,9 @@ import java.util.List;
 
 /**
  * Created by admin on 2017/4/6.
- * 无界通配符
- * ？是一个占位符，可以代表任意类型，“任意”也就是未知类型。
+ * <？>：无界通配符，非限定通配符
+ * <？>是一个占位符，可以代表任意类型，“任意”也就是未知类型。
  * List<Object>与List<?>并不等同，List<Object>是List<?>的子类。还有不能往List<?> list里添加任意对象
- *
- * 根据实际读写情况，选择相应的通配符做限定
  */
 public class Test3 {
 

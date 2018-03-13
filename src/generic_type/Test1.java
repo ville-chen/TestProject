@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * Created by admin on 2017/4/6.
- * ? extends Number用法：向上限定，根据上限父类接口来操作
+ * 限定通配符<? extends T>：向上限定，用来保证 泛型类型 必须是T或T的子类型
  */
 public class Test1 {
     //同理 ？类型未知，所以不能加入一种确定的类型

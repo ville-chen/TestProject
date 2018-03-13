@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * Created by admin on 2017/4/6.
- * ? super Number用法：向下限定，可以添加下限类型或下限的父类型
+ * 限定通配符<? super T>：向下限定，用来保证 泛型类型 必须是T或T的父类型
  */
 public class Test2 {
     //不能对向下限定的对象list进行迭代，因为没有公共的迭代逻辑
@@ -20,6 +20,11 @@ public class Test2 {
         //假设泛型限定参数类型为Number，那Integer和Float都可以向上转型为Number
         list.add(new Integer(1));
         list.add(new Float(1.1));
+
+        List<Number> list2 = new ArrayList<>();
+        List<Integer> list3 = new ArrayList<>();
+        fillNumberList(list2);
+        //fillNumberList(list3); 错误
     }
 
 
