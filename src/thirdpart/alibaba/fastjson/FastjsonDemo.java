@@ -5,8 +5,12 @@ import com.alibaba.fastjson.TypeReference;
 import com.alibaba.fastjson.serializer.SerializeConfig;
 import com.alibaba.fastjson.serializer.SimpleDateFormatSerializer;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Set;
 
 /**
  * fastjson解析json案例
@@ -46,6 +50,7 @@ public class FastjsonDemo {
         map2.put("user3", user3);
         map2_json(map2, cfg);*/
 
+        System.out.println(JSON.toJSONString(null));
     }
 
     /**

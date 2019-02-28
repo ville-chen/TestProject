@@ -1,4 +1,4 @@
-package jdk.encrypt.hmac_sha1;
+package encryption.hmac_sha1;
 
 import javax.crypto.Mac;
 import javax.crypto.SecretKey;

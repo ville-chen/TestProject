@@ -1,4 +1,4 @@
-package jdk.encrypt.hmac_sha1;
+package encryption.hmac_sha1;
 
 /**
  * Created by admin on 2018/1/13.
