@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 /**
  * @author Ville
@@ -40,7 +41,7 @@ public class HttpTest {
             conn.setDoInput(true);
             conn.connect();
             // 获取URLConnection对象对应的输出流
-            out = new OutputStreamWriter(conn.getOutputStream(),"UTF-8");
+            out = new OutputStreamWriter(conn.getOutputStream(), StandardCharsets.UTF_8);
             // 发送请求参数
             out.write(param);
             // flush输出流的缓冲
